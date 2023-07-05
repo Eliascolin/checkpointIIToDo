@@ -1,4 +1,3 @@
-
 //link api 
 var apiBaseUrl = 'https://todo-api.ctd.academy/v1'
 
@@ -192,11 +191,3 @@ buttonFormRef.addEventListener("click", (event) => {
   event.preventDefault()
   createUser(event)
 });
-
-
-
-
-
-
-
-
