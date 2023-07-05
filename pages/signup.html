@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="/styles/acesso.css">
 
   <!-- ---------------------- lógica aplicada no registro -------------------- -->
-  <script src="/scripts/utils.js"></script>
-  <script src="/scripts/signup.js"></script>
+  <script src="/scripts/utils.js" type="module" defer></script>
+  <script src="/scripts/signup.js" type="module" defer></script>
 
 </head>
 
@@ -30,7 +30,7 @@
       <label>
         Nome:
         <input type="text" 
-        name="name"
+        name="firstName"
         required
         minlength="4"
         maxlength="40"
@@ -72,8 +72,8 @@
         id="passwordRepitInput"
         >
       </label>
-
-      <button id="buttonForm">Criar conta</button>
+      <small class="erro_mensagem"></small>
+      <button id="buttonForm" disabled >Criar conta</button>
 
     </form>
     <div class="ingressar">
